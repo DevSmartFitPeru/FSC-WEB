@@ -1,0 +1,19 @@
+.overlay-content > ul > #ULfsc > li{
+    list-style-image: url("../images/FSC-SLIDER/check.png");
+}
+
+#ContactoForm {
+    background-color: white;
+    padding: 15px;
+    border: 2px solid red ;
+    border-radius: 9px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #042c5c;
+}
+
+input[type=text] {
+    border: 1px solid #000000;
+    padding-left: 5px;
+}
