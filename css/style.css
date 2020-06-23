@@ -5830,7 +5830,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     padding: 30px 35px 26px;
 }
 .main-menu.style3 .navigation > li:last-child > a{
-    padding-right: 0;
+   /* padding-right: 0;*/
 }
 .main-menu.style3 .navigation > li:hover > a, 
 .main-menu.style3 .navigation > li.current > a {
@@ -13021,9 +13021,60 @@ li .single-footer-contact-info .text p span{
     font-weight: 600;
 }
 
+/* ESTILOS PROPIOS */
+section.QuienesSomos{
+    background-image: url('../images/FSC-SLIDER/fcs2quienes-somos.jpg');
+    position: relative;
+    padding: 85px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-attachment: fixed;
+}
+img.imgOpaco{
+    opacity: 0.9;
+}
 
 
+section.Mision{
+    background-image: url('../images/FSC-SLIDER/fcs3mision.jpg');
+    position: relative;
+    padding: 85px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-attachment: fixed;
+}
 
+section.Vision{
+    background-image: url('../images/FSC-SLIDER/fcs4vision.jpg');
+    position: relative;
+    padding: 85px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-attachment: fixed;
+}
+
+section.Laboratorio{
+    background-image: url('../images/FSC-SLIDER/fcs-5laboratorio.jpg');
+    position: relative;
+    padding: 85px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-attachment: fixed;
+}
+
+section.OrgaInspeccion{
+    background-image: url('../images/FSC-SLIDER/fcs6inspección.jpg');
+    position: relative;
+    padding: 85px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-attachment: fixed;
+}
 
 
 
