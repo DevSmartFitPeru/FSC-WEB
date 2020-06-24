@@ -13076,6 +13076,51 @@ section.OrgaInspeccion{
     background-attachment: fixed;
 }
 
+section.Clientes{
+    background-image: url('../images/FSC-SLIDER/fcs7clientes.jpg');
+    position: relative;
+    padding: 85px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-attachment: fixed;
+    
+}
 
+section{
+    -webkit-box-shadow: 10px 10px 25px 26px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px 26px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px 26px rgba(0,0,0,0.75);
+}
 
+button.btn-cliente{
+    background-color: #042c5c;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
 
+button.btn-cliente:hover{
+    -webkit-box-shadow: 10px 10px 29px 3px rgba(4,44,92,1);
+    -moz-box-shadow: 10px 10px 29px 3px rgba(4,44,92,1);
+    box-shadow: 10px 10px 29px 3px rgba(4,44,92,1);
+    color: white;
+}
+
+button.btn-cliente::after{
+    background-color: #042c5c;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    bottom: -9px;
+    border: 1px solid #042c5c;
+    width:  20px;
+    right: 50%;
+    -moz-transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
+    -webkit-transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
+    -o-transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
+    -ms-transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
+    transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
+}
