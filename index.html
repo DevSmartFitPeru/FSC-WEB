@@ -56,17 +56,17 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix" style="list-style: none;  margin: 0;  padding: 0;">
-                                <li class="current"><a href="#">Inicio</a></li>
+                                <li id="InicioFSCid" class="current"><a href="#">Inicio</a></li>
 
-                                <li><a href="#nosotrosFSC">Nosotros</a></li>
+                                <li id="NosotrosFSCid" ><a href="#NosotrosFSC">Nosotros</a></li>
 
-                                <li><a href="#laboratorioFSC">Laboratorio</a></li>
+                                <li id="LaboratorioFSCid" ><a href="#LaboratorioFSC">Laboratorio</a></li>
 
-                                <li><a href="#inspeccionFSC">Org. Inspección</a></li>
+                                <li id="InspeccionFSCid" ><a href="#InspeccionFSC">Org. Inspección</a></li>
 
-                                <li><a href="#">Clientes</a></li>
+                                <li id="ClientesFSid" ><a href="#ClientesFSC">Clientes</a></li>
 
-                                <li><a href="#">Contactar</a></li>
+                                <li id="ContactoFSid" ><a href="#ContactoFSC">Contactar</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -81,7 +81,7 @@
         <!--End Mainmenu Style3 Area-->
 
         <!--Main Slider-->
-        <section class="main-slider style3 pb-1">
+        <div class="main-slider style3 " id="InicioFSC">
             <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
                 <div class="rev_slider fullwidthabanner" id="rev_slider_three" data-version="5.4.1">
                     <ul>
@@ -231,12 +231,13 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
         <!--End Main Slider-->
 
+        <div class="espaciado" id="NosotrosFSC"></div>
 
        <!-- Quienes SOmos -->
-        <section class="QuienesSomos pt-1 pb-1">
+        <section class="QuienesSomos pt-1 pb-1" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-3"></div>
@@ -250,22 +251,28 @@
 
 
 
+        <div class="espaciado"></div>
+
+
         <!-- Mision -->
-        <section class="Mision pt-1 ">
+        <section class="Mision pt-1 MisionFSC" id="MisionFSC">
             <div class="container">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-8 p-12">
-                        <img src="images/FSC-SLIDER/Mision.png" alt="Nuestra Mision FSC" class="float-left img-fluid p-5 imgOpaco">
+                        <img src="images/FSC-SLIDER/Mision.png" alt="Nuestra Mision FSC" class="float-left img-fluid p-5 imgOpaco" style="width: 80%;">
                     </div>
                     <div class="col-md-3"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Vision -->
 
-        <section class="Vision">
+        <div class="espaciado"></div>
+
+
+        <!-- Vision -->
+        <section class="Vision VisionFSC" id="VisionFSC">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-3"></div>
@@ -278,9 +285,12 @@
         </section>
 
 
+        <div class="espaciado"></div>
+
+
         <!-- Laboratorio -->
 
-        <section class="Laboratorio">
+        <section class="Laboratorio LaboratorioFSC" id="LaboratorioFSC">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-4"></div>
@@ -293,9 +303,14 @@
         </section>
 
 
+
+        <div class="espaciado"></div>
+
+
+
         <!-- Organismo de Inspeccion -->
 
-        <section class="OrgaInspeccion">
+        <section class="OrgaInspeccion InspeccionFSC" id="InspeccionFSC">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-4"></div>
@@ -308,8 +323,14 @@
         </section>
 
 
+
+        <div class="espaciado"></div>
+
+
+
+
         <!-- CLientes -->
-        <section class="Clientes">
+        <section class="Clientes ClientesFSC" id="ClientesFSC">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-2"></div>
@@ -320,40 +341,71 @@
                         </div>
 
                         <div class="row mt-2">
-                            <div class="col-md-12">
-                                <button class="btn btn-cliente col-md-5 col-6">Laboratorio</button>
-                                <button class="btn btn-cliente col-md-6 col-5">Organismo de Inspección</button>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-cliente col-md-5 col-6" id="laboratorio">Laboratorio</button>
+                                <button class="btn btn-cliente col-md-6 col-5" id="organismo">Organismo de Inspección</button>
                             </div>
                         </div>
 
-                        <div class="row mt-2">
+                        <div class="row mt-2" id="LaboratorioIMG">
                             <div class="container">
-                                <img src="images/FSC-SLIDER/clie_lab/agroworld.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/alicorp.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/andina.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/bakery.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/bimbo.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/casaeuropa.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/cbc.jpg" alt="" class=" img-fluid" width="13%">      
+                                <img src="images/FSC-SLIDER/clie_lab/agroworld.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/alicorp.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/andina.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/bakery.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/bimbo.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/casaeuropa.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/cbc.jpg" alt="" class="lazyload img-fluid" width="13%">      
                             </div>
 
                             <div class="container mt-1">
-                               <img src="images/FSC-SLIDER/clie_lab/cencosud.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/ecofresh.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/ecommodities.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/emusa.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/eurogerm.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/inpelsa.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/laiberica.jpg" alt="" class=" img-fluid" width="13%">    
+                               <img src="images/FSC-SLIDER/clie_lab/cencosud.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/ecofresh.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/ecommodities.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/emusa.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/eurogerm.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/inpelsa.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/laiberica.jpg" alt="" class="lazyload img-fluid" width="13%">    
                             </div>
 
                             <div class="container mt-1">
-                               <img src="images/FSC-SLIDER/clie_lab/lasbambas.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/nancynatur.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/nobex.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/pepsico.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/swissotel.jpg" alt="" class=" img-fluid" width="13%">
-                                <img src="images/FSC-SLIDER/clie_lab/tottus.jpg" alt="" class=" img-fluid" width="13%">  
+                               <img src="images/FSC-SLIDER/clie_lab/lasbambas.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/nancynatur.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/nobex.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/pepsico.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/swissotel.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_lab/tottus.jpg" alt="" class="lazyload img-fluid" width="13%">  
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="row mt-2" id="OrganismoIMG">
+                            <div class="container">
+                                <img src="images/FSC-SLIDER/clie_oi/bakery.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/cartavio.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/cencosud.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/eurogerm.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/inpelsa.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/laive.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/lnlh.jpg" alt="" class="lazyload img-fluid" width="13%">      
+                            </div>
+
+                            <div class="container mt-1">
+                               <img src="images/FSC-SLIDER/clie_oi/makro.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/molitalia.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/redondos.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/ricopollo.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/sanfernando.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/sodexo.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/solucionesalimenticias.jpg" alt="" class="lazyload img-fluid" width="13%">    
+                            </div>
+
+                            <div class="container mt-1">
+                               <img src="images/FSC-SLIDER/clie_oi/talsa.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/supesa.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/teoma.jpg" alt="" class="lazyload img-fluid" width="13%">
+                                <img src="images/FSC-SLIDER/clie_oi/tottus.jpg" alt="" class="lazyload img-fluid" width="13%">  
                             </div>
 
                             
@@ -366,10 +418,10 @@
             </div>
         </section>
 
-        
+        <div class="espaciado"></div>
 
         <!--Start latest blog area style2-->
-        <section class="latest-blog-area style3">
+        <section class="latest-blog-area style3 ContactoFSC" id="ContactoFSC">
             <div class="container inner-content">
                 <div class="row">
                     <div class="col-xl-12">
@@ -479,6 +531,9 @@
     <!-- thm custom script -->
     <script src="js/custom.js"></script>
 
+    <!-- Lazy Load -->
+    <script src="js/lazyl_oad.js"></script>
+    <script src="js/lazyLoad.js"></script>
 
 
 </body>

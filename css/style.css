@@ -13087,11 +13087,6 @@ section.Clientes{
     
 }
 
-section{
-    -webkit-box-shadow: 10px 10px 25px 26px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 25px 26px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 25px 26px rgba(0,0,0,0.75);
-}
 
 button.btn-cliente{
     background-color: #042c5c;
@@ -13123,4 +13118,9 @@ button.btn-cliente::after{
     -o-transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
     -ms-transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
     transform: rotate(118deg) translate(-4px, -9px) skew(-33deg, -1deg);
+}
+
+.espaciado{
+    background-color: #042c5c;
+    padding: 5px;
 }
