@@ -14,11 +14,15 @@ $(document).ready(function(){
     $("#laboratorio").click(function(){
         $("#OrganismoIMG").css("display", "none");
         $("#LaboratorioIMG").css("display", "block");
+        $("#laboratorio").css("color","red");
+        $("#organismo").css("color","white");
     })
 
     $("#organismo").click(function(){
         $("#LaboratorioIMG").css("display", "none");
         $("#OrganismoIMG").css("display", "block");
+        $("#organismo").css("color","red");
+        $("#laboratorio").css("color","white");
     })
 
     // SCROLL CON EFECTO
