@@ -58,15 +58,36 @@
                             <ul class="navigation clearfix" style="list-style: none;  margin: 0;  padding: 0;">
                                 <li id="InicioFSCid" class="current"><a href="#">Inicio</a></li>
 
-                                <li id="NosotrosFSCid" ><a href="#NosotrosFSC">Nosotros</a></li>
+                                <li id="NosotrosFSCid" class="dropdown" ><a href="#">Nosotros</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#NosotrosFSC" class="nav-link">¿Quienes Somos?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#MisionFSC" class="nav-link">Misión</a>
+                                        </li>
+                                        <li>
+                                            <a href="#VisionFSC" class="nav-link">Visión</a>
+                                        </li>
+                                    </ul
+                                ></li>
 
                                 <li id="LaboratorioFSCid" ><a href="#LaboratorioFSC">Laboratorio</a></li>
 
                                 <li id="InspeccionFSCid" ><a href="#InspeccionFSC">Org. Inspección</a></li>
 
-                                <li id="ClientesFSid" ><a href="#ClientesFSC">Clientes</a></li>
+                                <li id="ClientesFSid" class="dropdown"><a href="#ClientesFSC">Clientes</a>
+                                    <ul>
+                                        <li id="ClientesLab">
+                                            <a href="#ClientesFSC" class="nav-link">Laboratorio</a>
+                                        </li>
+                                        <li id="ClientesOrg">
+                                            <a href="#ClientesFSC" class="nav-link">Org. Inspeccion</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                                <li id="ContactoFSid" ><a href="#ContactoFSC">Contactar</a></li>
+                                <li id="ContactoFSid"><a href="#ContactoFSC">Contactar</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -257,9 +278,9 @@
         <!-- Mision -->
         <section class="Mision pt-1 MisionFSC" id="MisionFSC">
             <div class="container">
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 p-12">
+                    <div class="col-md-8">
                         <img src="images/FSC-SLIDER/Mision.png" alt="Nuestra Mision FSC" class="float-left img-fluid p-5 imgOpaco" style="width: 80%;">
                     </div>
                     <div class="col-md-3"></div>
@@ -324,20 +345,20 @@
 
 
 
-        <div class="espaciado"></div>
+        <div class="espaciado"  id="ClientesFSC"></div>
 
 
 
 
         <!-- CLientes -->
-        <section class="Clientes ClientesFSC" id="ClientesFSC">
+        <section class="Clientes ClientesFSC">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
 
                         <div class="row">
-                            <img src="images/FSC-SLIDER/TituloCliente.png" alt="Clientes Titulo FSC" class="img-fluid imgOpaco" style="width: 40%;">
+                            <img src="images/FSC-SLIDER/TituloCliente.png" alt="Clientes Titulo FSC" class="img-fluid imgOpaco pt-3 pl-3" style="width: 40%;">
                         </div>
 
                         <div class="row mt-2">

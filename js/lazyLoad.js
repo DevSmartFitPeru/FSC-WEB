@@ -31,8 +31,16 @@ $(document).ready(function(){
         $('li').removeClass('current');
         $('li#NosotrosFSCid').addClass('current');
      
-       
     }
 
-	
+
+    // CLICKS EN CLIENTES
+
+    $("#ClientesLab").click(function(){
+        $("#laboratorio").click();
+    })
+
+	$("#ClientesOrg").click(function(){
+        $("#organismo").click();
+    })
 })
