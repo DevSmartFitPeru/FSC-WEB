@@ -27,7 +27,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
-        
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 
 <body>
@@ -308,7 +308,6 @@
 
         <div class="espaciado"></div>
 
-
         <!-- Laboratorio -->
 
         <section class="Laboratorio LaboratorioFSC" id="LaboratorioFSC">
@@ -323,11 +322,7 @@
             </div>
         </section>
 
-
-
         <div class="espaciado"></div>
-
-
 
         <!-- Organismo de Inspeccion -->
 
@@ -459,23 +454,23 @@
                     
 
                         <div class="col-md-6">
-                            <form action="" method="post" id="ContactoForm">
+                            <form method="post" id="ContactoForm">
                                 <p style="color: black; text-align: center;">Por favor, complete el formulario para mandarnos un mensaje.</p>
                              
                                  <div class="row ">
                                      <div class="col-md-6 form-group">
-                                         <input type="text" class="form-control" placeholder="Nombre*" required> 
+                                         <input type="text" class="form-control" name="nombre" placeholder="Nombre*" required> 
                                      </div>
                                      
                                      <div class="col-md-6 form-group">
-                                         <input type="text" class="form-control" placeholder="Email*" required> 
+                                         <input type="text" class="form-control" name="email" placeholder="Email*" required> 
      
                                      </div>
                                  </div>
 
                                  <div class="row form-group">
                                     <div class="col-md-12">
-                                        <textarea required class="form-control" rows="3" placeholder="Mensaje*"></textarea>
+                                        <textarea required class="form-control" name="mensaje" rows="3" placeholder="Mensaje*"></textarea>
                                     </div>
                                  </div>
                                  
