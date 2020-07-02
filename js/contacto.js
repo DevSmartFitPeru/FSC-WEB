@@ -7,16 +7,16 @@ $(document).ready(function(){
             type:'post',
             url:'php/contacto.php',
             data:datos,
-            success:function(response){
+            success:function(data){
                 Swal.fire({
                     title: 'Datos Enviados!',
                     text: "En unos momentos nos pondremos en contacto contigo!",
                     icon: 'success'
-                  }).then((result) => {
-                    if (result.value) {
-                      Swal.fire(
-                       window.location("index.html")
-                      )
+                  }).then((value) => {
+                    if (value.value) {
+                      
+                        window.location ="index.html";
+                      
                     }
                   });
 
@@ -25,14 +25,15 @@ $(document).ready(function(){
                     icon: 'error',
                     title: 'Oops, Tenemos problemas con el Servidor',
                     text: 'Intentalo nuevamente!'
-                  }).then((result) => {
-                    if (result.value) {
-                      Swal.fire(
-                       window.location("index.html")
-                      )
+                  }).then((response) => {
+                    if (response.value) {
+
+                        window.location ="index.html";
                     }
                   });
             })
         })
+
+       
     })
 })
