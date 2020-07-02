@@ -10,7 +10,7 @@ $(document).ready(function(){
             success:function(data){
                 Swal.fire({
                     title: 'Datos Enviados!',
-                    text: "En unos momentos nos pondremos en contacto contigo!",
+                    text: 'En unos momentos nos pondremos en contacto contigo!',
                     icon: 'success'
                   }).then((value) => {
                     if (value.value) {
@@ -19,19 +19,7 @@ $(document).ready(function(){
                       
                     }
                   });
-
-            }.fail(function() {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops, Tenemos problemas con el Servidor',
-                    text: 'Intentalo nuevamente!'
-                  }).then((response) => {
-                    if (response.value) {
-
-                        window.location ="index.html";
-                    }
-                  });
-            })
+            }
         })
 
        
