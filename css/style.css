@@ -549,7 +549,7 @@ li{
 /* scroll to top styles */
 .scroll-to-top {
     position: fixed;
-    right: 20px;
+    left: 20px;
     bottom: 30px;
     width: 55px;
     height: 55px;
