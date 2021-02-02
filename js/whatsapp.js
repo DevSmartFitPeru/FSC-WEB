@@ -1,5 +1,4 @@
 
-
 popupWhatsApp = () => {
   
   let btnClosePopup = document.querySelector('.closePopup');
@@ -19,7 +18,7 @@ popupWhatsApp = () => {
   
   sendBtn.addEventListener("click", () => {
   let msg = document.getElementById('whats-in').value;
-  let tlf = document.getElementById('cmbArea').value;
+  let tlf = '51948967212';
   let relmsg = msg.replace(/ /g,"%20");
   
      
@@ -29,16 +28,16 @@ popupWhatsApp = () => {
 
  
 
-  // setTimeout(() => {
-  //   popup.classList.toggle('is-active-whatsapp-popup');
-  // }, 3000);
+  setTimeout(() => {
+    popup.classList.toggle('is-active-whatsapp-popup');
+  }, 2000);
 }
 
 popupWhatsApp();
 
-$(".send-wsp").click(function(){
-  var msj = $(".txtwhats").val();
+// $(".send-wsp").click(function(){
+//   var msj = $(".txtwhats").val();
 
-  window.open('https://wa.me/51948967212?text='+msj, '_blank'); 
-})
+//   window.open('https://wa.me/51948967212?text='+msj, '_blank'); 
+// })
 
