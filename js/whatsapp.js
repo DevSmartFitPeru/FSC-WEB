@@ -22,8 +22,7 @@ popupWhatsApp = () => {
   let relmsg = msg.replace(/ /g,"%20");
   
      
-  window.open('https://wa.me/'+tlf+'?text='+relmsg, '_blank'); 
-  
+  window.open('https://web.whatsapp.com/send?phone='+tlf+'&text='+relmsg, '_blank'); 
   });
 
  
