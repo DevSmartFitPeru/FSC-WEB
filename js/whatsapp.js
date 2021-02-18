@@ -5,6 +5,7 @@ popupWhatsApp = () => {
   let btnOpenPopup = document.querySelector('.whatsapp-button');
   let popup = document.querySelector('.popup-whatsapp');
   let sendBtn = document.getElementById('send-btn');
+  //let numArea = document.getElementById('numArea');
 
 
   btnClosePopup.addEventListener("click",  () => {
@@ -16,14 +17,14 @@ popupWhatsApp = () => {
      popup.style.animation = "fadeIn .6s 0.0s both";
   })
   
-  sendBtn.addEventListener("click", () => {
-  let msg = document.getElementById('whats-in').value;
-  let tlf = '51948967212';
-  let relmsg = msg.replace(/ /g,"%20");
+  // sendBtn.addEventListener("click", () => {
+  // let msg = document.getElementById('whats-in').value;
+  // let tlf = document.getElementById('numArea').value;
+  // let relmsg = msg.replace(/ /g,"%20");
   
      
-  window.open('https://web.whatsapp.com/send?phone='+tlf+'&text='+relmsg, '_blank'); 
-  });
+  // window.open('https://web.whatsapp.com/send?phone='+tlf+'&text='+relmsg, '_blank'); 
+  // });
 
  
 
@@ -34,9 +35,20 @@ popupWhatsApp = () => {
 
 popupWhatsApp();
 
-// $(".send-wsp").click(function(){
-//   var msj = $(".txtwhats").val();
+$("#send-btn").click(function(){
+  let tlf = $("#numArea").val();
+  let msg = $("#whats-in").val();
 
-//   window.open('https://wa.me/51948967212?text='+msj, '_blank'); 
-// })
-
+  if (tlf != '' && msg != '') {
+    let relmsg = msg.replace(/ /g,"%20");
+    window.open('https://web.whatsapp.com/send?phone='+tlf+'&text='+relmsg, '_blank'); 
+  } else {
+   
+    Swal.fire(
+      'Error al Enviar',
+      'Seleccion el area y/o escriba el mensaje',
+      'error'
+    );
+    
+  }
+})
