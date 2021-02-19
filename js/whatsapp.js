@@ -45,7 +45,7 @@ $("#send-btn").click(function(){
   } else {
    
     Swal.fire(
-      'Error al Enviar',
+      'Complete los campos!',
       'Seleccion el area y/o escriba el mensaje',
       'error'
     );
