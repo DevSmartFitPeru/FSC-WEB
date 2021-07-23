@@ -11,16 +11,21 @@ $contenido .= "MENSAJE: ".$mensaje;
 
 $cuerpo=utf8_decode($contenido);
 
+$emailLab = 'lab@grupofoodsolutions.onmicrosoft.com';
+$emailSistemas = 'sistemas@grupofoodsolutions.onmicrosoft.com';
+
 if (!empty($nombre)&&!empty($email)&&!empty($mensaje)) {
-    mail('sistemas@grupofs.com,lab@fscertificaciones.com,
-    fsc@fscertificaciones.com','CONTACTO DESDE LA WEB FSC',$cuerpo);
 
-    $data['response']="ok";
-
-    echo json_encode($data);
+    $send = mail($emailLab.','.$emailSistemas,'CONTACTO DESDE LA WEB FSC',$cuerpo);
+    if ($send) {
+         $data['response']="ok";
+    } else {
+         $data['response']="fail";
+    }
+    
 } else {
     
     $data['response']="error";
 
-    echo json_encode($data);
 }
+echo json_encode($data);
