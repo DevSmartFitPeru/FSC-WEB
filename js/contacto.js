@@ -17,11 +17,10 @@ $(document).ready(function(){
                         'success'
                     );
 
-                    $("#btnEnviar").text('Enviado!');
 
-                    $(".form_name").val('');
-                    $(".form_email").val('');
-                    $(".form_message").val('');
+                    $("#txtNombre").val('');
+                    $("#txtEmail").val('');
+                    $("#txtMensaje").val('');
                 } else if(res.response == 'error') {
                     Swal.fire(
                         'Datos no Enviados!',
@@ -29,7 +28,6 @@ $(document).ready(function(){
                         'error'
                     );
 
-                    $("#btnEnviar").text('Enviar!');
 
                 }else{
                     Swal.fire(
@@ -38,7 +36,6 @@ $(document).ready(function(){
                         'error'
                     );
 
-                    $("#btnEnviar").text('Enviar!');
                 }
             }
         })
