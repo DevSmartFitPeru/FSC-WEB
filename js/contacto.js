@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    var getDate = new Date();
+    var anio = getDate.getFullYear();
+    $("#txtAnio").text(anio); 
+    
     $("#ContactoForm").submit(function(e){
         e.preventDefault();
 

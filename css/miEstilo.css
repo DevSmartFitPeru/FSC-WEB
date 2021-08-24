@@ -9,4 +9,54 @@
     border-radius: 9px;
 }
 
+.headRed{
+    background-color: #e9212e ;
+    text-align: center;
+    font-weight: bold;
+    padding: 4% 0%;
+    opacity: 0.9;
+    margin-bottom: 1.5%;
+}
+.headRed>h1{
+    color: white;
+}
+
+.bodyBlue{
+    background-color: #042c5c ;
+    text-align: center;
+    padding: 6%;
+    opacity: 0.9;
+    color: white;
+}
+
+.barraWhite{
+  
+    border-left: 4px solid white;
+}
+
+.barraWhite2{
+    border-top: 4px solid white;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 5%;
+}
+.textVertical{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    /* margin-left: -20px; */
+}
+ul.iconList{
+    list-style-image: url('../images/icon/check.png');
+  
+}
+.borderContacto::after{
+    content: "";
+    border-right: 3px solid white ;
+    top:8%;
+    right: 0;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+}
 

@@ -887,7 +887,10 @@ select:focus {
 }
 
 
-
+/* RECTANGULOS CON DESCRIPCION*/
+.headRed{
+    background-color: #e9212e ;
+}
 
 
 /*==============================================
@@ -13124,3 +13127,4 @@ button.btn-cliente::after{
     background-color: #042c5c;
     padding: 5px;
 }
+
