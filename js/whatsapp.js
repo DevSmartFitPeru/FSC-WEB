@@ -41,7 +41,7 @@ $("#send-btn").click(function(){
 
   if (tlf != '' && msg != '') {
     let relmsg = msg.replace(/ /g,"%20");
-    window.open('https://web.whatsapp.com/send?phone='+tlf+'&text='+relmsg, '_blank'); 
+    window.open('https://api.whatsapp.com/send?phone='+tlf+'&text='+relmsg, '_blank'); 
   } else {
    
     Swal.fire(
