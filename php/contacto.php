@@ -29,3 +29,4 @@ if (!empty($nombre)&&!empty($email)&&!empty($mensaje)) {
 
 }
 echo json_encode($data);
+?>
